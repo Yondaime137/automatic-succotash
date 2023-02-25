@@ -7,4 +7,10 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'Test';
+
+  users: any  = [];
+
+  karabas = (input: string) => {
+    this.users.push(input);
+  }
 }
